@@ -245,6 +245,7 @@ int event_disable(char *event)
 	
 int check_privs(void)
 {
+	return 0;
 	int policy = sched_getscheduler(0);
 	struct sched_param param, old_param;
 
